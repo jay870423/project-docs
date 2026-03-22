@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻动态 - AI驱动未来</title>
+    <meta name="description" content="了解公司最新动态和技术分享">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>AI Tech</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">首页</a></li>
+                    <li><a href="about.html" class="nav-link">关于我们</a></li>
+                    <li><a href="products.html" class="nav-link">产品展示</a></li>
+                    <li><a href="cases.html" class="nav-link">案例展示</a></li>
+                    <li><a href="news.html" class="nav-link active">新闻动态</a></li>
+                    <li><a href="contact.html" class="nav-link">联系我们</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 移动端菜单 -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="../index.html" class="mobile-link">首页</a></li>
+            <li><a href="about.html" class="mobile-link">关于我们</a></li>
+            <li><a href="products.html" class="mobile-link">产品展示</a></li>
+            <li><a href="cases.html" class="mobile-link">案例展示</a></li>
+            <li><a href="news.html" class="mobile-link active">新闻动态</a></li>
+            <li><a href="contact.html" class="mobile-link">联系我们</a></li>
+        </ul>
+    </div>
+
+    <!-- 页面头部 -->
+    <header class="page-header">
+        <div class="container">
+            <h1>新闻动态</h1>
+            <p>了解公司最新动态和技术分享</p>
+        </div>
+    </header>
+
+    <!-- 新闻列表 -->
+    <section class="section">
+        <div class="container">
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="company">公司新闻</button>
+                <button class="filter-btn" data-filter="tech">技术分享</button>
+                <button class="filter-btn" data-filter="industry">行业观察</button>
+            </div>
+            <div class="news-list">
+                <div class="news-item" data-category="company">
+                    <div class="news-image"></div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="far fa-calendar"></i> 2024-03-15</span>
+                            <span class="tag">公司新闻</span>
+                        </div>
+                        <h2><a href="news-detail.html">完成A+轮融资，加速AI产品创新</a></h2>
+                        <p class="news-excerpt">我们很高兴地宣布，公司已完成A+轮融资，由某知名VC领投。本轮融资将用于产品研发和市场拓展，加速AI产品创新...</p>
+                        <a href="news-detail.html" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-item" data-category="tech">
+                    <div class="news-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="far fa-calendar"></i> 2024-02-20</span>
+                            <span class="tag">技术分享</span>
+                        </div>
+                        <h2><a href="news-detail.html">大语言模型在企业客服中的应用实践</a></h2>
+                        <p class="news-excerpt">本文将分享我们在大语言模型落地企业客服场景中的实践经验，包括数据准备、模型微调、效果优化等方面...</p>
+                        <a href="news-detail.html" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-item" data-category="industry">
+                    <div class="news-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="far fa-calendar"></i> 2024-01-28</span>
+                            <span class="tag">行业观察</span>
+                        </div>
+                        <h2><a href="news-detail.html">AI时代，传统企业如何数字化转型</a></h2>
+                        <p class="news-excerpt">AI技术的快速发展给传统企业带来了新的机遇和挑战，本文分享我们对于传统企业数字化转型的一些思考...</p>
+                        <a href="news-detail.html" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-item" data-category="company">
+                    <div class="news-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="far fa-calendar"></i> 2024-01-10</span>
+                            <span class="tag">公司新闻</span>
+                        </div>
+                        <h2><a href="news-detail.html">AI设计助手2.0版本正式发布</a></h2>
+                        <p class="news-excerpt">经过数月的研发，AI设计助手2.0版本正式发布，新增多项功能，提升生成质量，支持更多设计场景...</p>
+                        <a href="news-detail.html" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-item" data-category="tech">
+                    <div class="news-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="far fa-calendar"></i> 2023-12-18</span>
+                            <span class="tag">技术分享</span>
+                        </div>
+                        <h2><a href="news-detail.html">如何构建企业私有大语言模型</a></h2>
+                        <p class="news-excerpt">随着大语言模型的发展，很多企业都希望构建自己的私有大语言模型，本文分享我们在这方面的实践经验...</p>
+                        <a href="news-detail.html" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-item" data-category="industry">
+                    <div class="news-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="far fa-calendar"></i> 2023-11-25</span>
+                            <span class="tag">行业观察</span>
+                        </div>
+                        <h2><a href="news-detail.html">AI对产品设计行业的影响</a></h2>
+                        <p class="news-excerpt">AI生成设计正在改变产品设计行业，设计师应该如何应对这种变化？AI会替代设计师吗？本文分享我们的观点...</p>
+                        <a href="news-detail.html" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#" class="page-link"><i class="fas fa-chevron-left"></i></a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-brain"></i>
+                        <span>AI Tech</span>
+                    </div>
+                    <p>用AI工具打造创新产品，助力企业数字化转型</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="微信"><i class="fab fa-weixin"></i></a>
+                        <a href="#" aria-label="微博"><i class="fab fa-weibo"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>产品</h4>
+                    <ul>
+                        <li><a href="products.html">智能客服系统</a></li>
+                        <li><a href="products.html">AI设计助手</a></li>
+                        <li><a href="products.html">数据分析平台</a></li>
+                        <li><a href="products.html">智能代码助手</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>关于</h4>
+                    <ul>
+                        <li><a href="about.html">公司简介</a></li>
+                        <li><a href="cases.html">成功案例</a></li>
+                        <li><a href="news.html">新闻动态</a></li>
+                        <li><a href="contact.html">加入我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>北京市朝阳区科技园区</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>400-123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@aitech.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI Tech. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

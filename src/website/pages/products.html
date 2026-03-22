@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品展示 - AI驱动未来</title>
+    <meta name="description" content="我们用AI技术打造的创新产品">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>AI Tech</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">首页</a></li>
+                    <li><a href="about.html" class="nav-link">关于我们</a></li>
+                    <li><a href="products.html" class="nav-link active">产品展示</a></li>
+                    <li><a href="cases.html" class="nav-link">案例展示</a></li>
+                    <li><a href="news.html" class="nav-link">新闻动态</a></li>
+                    <li><a href="contact.html" class="nav-link">联系我们</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 移动端菜单 -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="../index.html" class="mobile-link">首页</a></li>
+            <li><a href="about.html" class="mobile-link">关于我们</a></li>
+            <li><a href="products.html" class="mobile-link active">产品展示</a></li>
+            <li><a href="cases.html" class="mobile-link">案例展示</a></li>
+            <li><a href="news.html" class="mobile-link">新闻动态</a></li>
+            <li><a href="contact.html" class="mobile-link">联系我们</a></li>
+        </ul>
+    </div>
+
+    <!-- 页面头部 -->
+    <header class="page-header">
+        <div class="container">
+            <h1>产品展示</h1>
+            <p>我们用AI技术打造的创新产品</p>
+        </div>
+    </header>
+
+    <!-- 产品列表 -->
+    <section class="section">
+        <div class="container">
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="nlp">自然语言处理</button>
+                <button class="filter-btn" data-filter="vision">计算机视觉</button>
+                <button class="filter-btn" data-filter="data">数据分析</button>
+                <button class="filter-btn" data-filter="tools">开发工具</button>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-category="nlp">
+                    <div class="product-image">
+                        <div class="product-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>智能客服系统</h3>
+                        <p>基于大语言模型的智能客服，7×24小时自动响应客户咨询，提升服务效率</p>
+                        <div class="product-tags">
+                            <span class="tag">NLP</span>
+                            <span class="tag">客服</span>
+                        </div>
+                    </div>
+                    <a href="product-detail.html?id=1" class="product-link"></a>
+                </div>
+                <div class="product-card" data-category="vision">
+                    <div class="product-image">
+                        <div class="product-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>AI设计助手</h3>
+                        <p>AI驱动的智能设计工具，快速生成海报、Banner、宣传图，提升设计效率</p>
+                        <div class="product-tags">
+                            <span class="tag">AIGC</span>
+                            <span class="tag">设计</span>
+                        </div>
+                    </div>
+                    <a href="product-detail.html?id=2" class="product-link"></a>
+                </div>
+                <div class="product-card" data-category="data">
+                    <div class="product-image">
+                        <div class="product-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>数据分析平台</h3>
+                        <p>AI辅助的智能数据分析平台，自动挖掘数据价值，生成业务洞察报告</p>
+                        <div class="product-tags">
+                            <span class="tag">大数据</span>
+                            <span class="tag">分析</span>
+                        </div>
+                    </div>
+                    <a href="product-detail.html?id=3" class="product-link"></a>
+                </div>
+                <div class="product-card" data-category="tools">
+                    <div class="product-image">
+                        <div class="product-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>智能代码助手</h3>
+                        <p>AI辅助开发工具，自动补全代码，修复Bug，提升开发效率</p>
+                        <div class="product-tags">
+                            <span class="tag">开发工具</span>
+                            <span class="tag">AI编码</span>
+                        </div>
+                    </div>
+                    <a href="product-detail.html?id=4" class="product-link"></a>
+                </div>
+                <div class="product-card" data-category="nlp">
+                    <div class="product-image">
+                        <div class="product-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>智能搜索引擎</h3>
+                        <p>基于语义理解的企业内部搜索引擎，精准理解用户意图，快速找到所需信息</p>
+                        <div class="product-tags">
+                            <span class="tag">NLP</span>
+                            <span class="tag">搜索</span>
+                        </div>
+                    </div>
+                    <a href="product-detail.html?id=5" class="product-link"></a>
+                </div>
+                <div class="product-card" data-category="vision">
+                    <div class="product-image">
+                        <div class="product-placeholder" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
+                            <i class="fas fa-face-smile"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>人脸智能分析</h3>
+                        <p>人脸识别、表情分析、属性检测，适用于安防、零售等多个场景</p>
+                        <div class="product-tags">
+                            <span class="tag">计算机视觉</span>
+                            <span class="tag">识别</span>
+                        </div>
+                    </div>
+                    <a href="product-detail.html?id=6" class="product-link"></a>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#" class="page-link"><i class="fas fa-chevron-left"></i></a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA区域 -->
+    <section class="cta section bg-gradient">
+        <div class="container">
+            <div class="cta-content">
+                <h2>需要定制AI解决方案？</h2>
+                <p>我们可以根据您的具体需求，定制专属AI产品</p>
+                <a href="contact.html" class="btn btn-light btn-lg">咨询详情</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-brain"></i>
+                        <span>AI Tech</span>
+                    </div>
+                    <p>用AI工具打造创新产品，助力企业数字化转型</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="微信"><i class="fab fa-weixin"></i></a>
+                        <a href="#" aria-label="微博"><i class="fab fa-weibo"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>产品</h4>
+                    <ul>
+                        <li><a href="products.html">智能客服系统</a></li>
+                        <li><a href="products.html">AI设计助手</a></li>
+                        <li><a href="products.html">数据分析平台</a></li>
+                        <li><a href="products.html">智能代码助手</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>关于</h4>
+                    <ul>
+                        <li><a href="about.html">公司简介</a></li>
+                        <li><a href="cases.html">成功案例</a></li>
+                        <li><a href="news.html">新闻动态</a></li>
+                        <li><a href="contact.html">加入我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>北京市朝阳区科技园区</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>400-123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@aitech.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI Tech. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻详情 - AI驱动未来</title>
+    <meta name="description" content="新闻文章详情">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        .article-content p {
+            margin-bottom: 20px;
+            font-size: 17px;
+        }
+        .article-content h2 {
+            margin: 40px 0 20px;
+            font-size: 28px;
+        }
+        .article-content h3 {
+            margin: 30px 0 15px;
+            font-size: 22px;
+        }
+        .article-content blockquote {
+            border-left: 4px solid var(--primary-color);
+            padding-left: 20px;
+            margin: 20px 0;
+            color: var(--text-secondary);
+            background: var(--light-bg);
+            padding: 15px 20px;
+            border-radius: 4px;
+        }
+        .article-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            color: var(--text-tertiary);
+            flex-wrap: wrap;
+        }
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .article-featured-image {
+            width: 100%;
+            height: 400px;
+            background: var(--gradient-primary);
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 768px) {
+            .article-featured-image {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>AI Tech</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">首页</a></li>
+                    <li><a href="about.html" class="nav-link">关于我们</a></li>
+                    <li><a href="products.html" class="nav-link">产品展示</a></li>
+                    <li><a href="cases.html" class="nav-link">案例展示</a></li>
+                    <li><a href="news.html" class="nav-link active">新闻动态</a></li>
+                    <li><a href="contact.html" class="nav-link">联系我们</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 移动端菜单 -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="../index.html" class="mobile-link">首页</a></li>
+            <li><a href="about.html" class="mobile-link">关于我们</a></li>
+            <li><a href="products.html" class="mobile-link">产品展示</a></li>
+            <li><a href="cases.html" class="mobile-link">案例展示</a></li>
+            <li><a href="news.html" class="mobile-link active">新闻动态</a></li>
+            <li><a href="contact.html" class="mobile-link">联系我们</a></li>
+        </ul>
+    </div>
+
+    <!-- 面包屑 -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ol>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="news.html">新闻动态</a></li>
+                <li>完成A+轮融资，加速AI产品创新</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 文章内容 -->
+    <section class="section">
+        <div class="container">
+            <article>
+                <header style="text-align: center; margin-bottom: 40px;">
+                    <h1>完成A+轮融资，加速AI产品创新</h1>
+                    <div class="article-meta" style="justify-content: center; margin-top: 20px;">
+                        <span><i class="far fa-calendar"></i> 2024-03-15</span>
+                        <span><i class="far fa-user"></i> 市场部</span>
+                        <span><i class="fas fa-tag"></i> 公司新闻</span>
+                    </div>
+                </header>
+
+                <div class="article-content">
+                    <div class="article-featured-image"></div>
+
+                    <p>我们很高兴地宣布，AI Tech已于近日完成A+轮融资。本轮融资由某知名风险投资机构领投，多家跟投机构参与。资金将主要用于产品研发、市场拓展和团队建设，加速AI产品创新和商业化落地。</p>
+
+                    <h2>关于我们</h2>
+
+                    <p>AI Tech成立于2020年，专注于用AI技术帮助企业实现数字化转型。公司核心团队来自Google、阿里巴巴等顶尖科技企业，拥有丰富的AI研发和产品落地经验。</p>
+
+                    <p>成立以来，我们已经为金融、零售、医疗、制造等多个行业的上百家企业提供了AI产品和解决方案，帮助客户提升效率、降低成本、创造新的业务价值。</p>
+
+                    <blockquote>
+                        <p>"AI技术正在深刻改变各行各业，我们相信，每一家企业都应该能够享受到AI技术带来的红利。我们希望通过持续的产品创新，让AI技术真正落地，为客户创造实实在在的价值。" — 创始人张科技</p>
+                    </blockquote>
+
+                    <h2>产品布局</h2>
+
+                    <p>目前，我们已经形成了完善的AI产品矩阵：</p>
+
+                    <h3>1. 智能客服系统</h3>
+                    <p>基于大语言模型的智能客服系统，能够自动回答客户咨询，解决常见问题，支持多轮对话，显著降低人工客服成本，提升客户体验。</p>
+
+                    <h3>2. AI设计助手</h3>
+                    <p>AI驱动的智能设计工具，帮助设计师快速生成海报、Banner、宣传图等设计素材，提升设计效率，降低设计成本。</p>
+
+                    <h3>3. 数据分析平台</h3>
+                    <p>AI辅助的智能数据分析平台，能够自动挖掘数据价值，发现业务规律，生成洞察报告，帮助企业做出更明智的决策。</p>
+
+                    <h3>4. 行业解决方案</h3>
+                    <p>针对不同行业的特点，提供定制化AI解决方案，帮助企业解决具体业务问题。</p>
+
+                    <h2>未来规划</h2>
+
+                    <p>本轮融资完成后，我们将：</p>
+
+                    <ol>
+                        <li><strong>加大产品研发投入</strong> — 持续迭代现有产品，探索AI技术在更多场景的应用创新</li>
+                        <li><strong>加强市场拓展</strong> — 扩大销售团队，提升品牌影响力，服务更多客户</li>
+                        <li><strong>完善生态建设</strong> — 加强与合作伙伴的合作，共同打造AI生态</li>
+                        <li><strong>吸引优秀人才</strong> — 扩大团队规模，吸引更多优秀人才加入</li>
+                    </ol>
+
+                    <h2>感谢</h2>
+
+                    <p>感谢投资人对我们的认可和信任，感谢所有客户对我们的支持，感谢每一位团队成员的努力。我们会继续努力，打造更好的产品，为客户创造更大价值。</p>
+
+                    <p>如果您对我们的产品感兴趣，或者有AI相关的需求，欢迎联系我们。</p>
+                </div>
+
+                <div style="max-width: 800px; margin: 40px auto; padding-top: 30px; border-top: 1px solid var(--border-color);">
+                    <div style="display: flex; justify-content: space-between;">
+                        <a href="#" class="read-more"><i class="fas fa-arrow-left"></i> 上一篇</a>
+                        <a href="#" class="read-more">下一篇 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- 相关文章 -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">推荐阅读</h2>
+            </div>
+            <div class="news-list">
+                <div class="news-item" data-category="tech">
+                    <div class="news-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="far fa-calendar"></i> 2024-02-20</span>
+                            <span class="tag">技术分享</span>
+                        </div>
+                        <h2><a href="news-detail.html">大语言模型在企业客服中的应用实践</a></h2>
+                        <p class="news-excerpt">本文将分享我们在大语言模型落地企业客服场景中的实践经验...</p>
+                        <a href="news-detail.html" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-item" data-category="industry">
+                    <div class="news-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="far fa-calendar"></i> 2024-01-28</span>
+                            <span class="tag">行业观察</span>
+                        </div>
+                        <h2><a href="news-detail.html">AI时代，传统企业如何数字化转型</a></h2>
+                        <p class="news-excerpt">AI技术的快速发展给传统企业带来了新的机遇和挑战...</p>
+                        <a href="news-detail.html" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA区域 -->
+    <section class="cta section bg-gradient">
+        <div class="container">
+            <div class="cta-content">
+                <h2>想了解更多？</h2>
+                <p>欢迎联系我们，探讨AI合作机会</p>
+                <a href="contact.html" class="btn btn-light btn-lg">联系我们</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-brain"></i>
+                        <span>AI Tech</span>
+                    </div>
+                    <p>用AI工具打造创新产品，助力企业数字化转型</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="微信"><i class="fab fa-weixin"></i></a>
+                        <a href="#" aria-label="微博"><i class="fab fa-weibo"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>产品</h4>
+                    <ul>
+                        <li><a href="products.html">智能客服系统</a></li>
+                        <li><a href="products.html">AI设计助手</a></li>
+                        <li><a href="products.html">数据分析平台</a></li>
+                        <li><a href="products.html">智能代码助手</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>关于</h4>
+                    <ul>
+                        <li><a href="about.html">公司简介</a></li>
+                        <li><a href="cases.html">成功案例</a></li>
+                        <li><a href="news.html">新闻动态</a></li>
+                        <li><a href="contact.html">加入我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>北京市朝阳区科技园区</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>400-123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@aitech.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI Tech. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
